@@ -1,5 +1,44 @@
+
 body {
-  font-family: sans-serif;
+  background-color: #eceff1;
+  font-family: 'Roboto', sans-serif;
+}
+div.show-data {
+  width: 100%;
+  background-color: #cfd8dc;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 6px;
+  box-shadow: 3px 3px gray;
+}
+div>h1 {
+ text-align: center;
+}
+div>img {
+  display: block;
+}
+div.show-info {
+  width: 100%;
+}
+
+@media only screen and (min-width: 800px) {
+  div.show-data{
+    display: flex;
+  }
+
+  div.show-info{
+    padding: 10px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  img {
+    margin: auto;
+  }
+  div.show-info>p {
+    text-align: center;
+    padding: 10px;
+  }
 }
 
 
